@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and tourism project</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #367591;
+            border: 1px solid #367591;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+            font-size: 18px;
+            color:#367591;
+        }
+        body{
+            background: linear-gradient(109.6deg, rgb(223, 234, 247) 11.2%, rgb(244, 248, 252) 91.1%);
+             color:#367591;
+            width:50%;
+            margin:60px auto;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            padding: 15px 20px;
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 10px 5px 5px;
+            transition: all ease-in-out;
+            background: #367591;
+            font-size: 16px;
+            color: #F9F9F9;
+        }
+        img{
+            display:block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 15px;
+            width: 750px;
+            p{
+                line-height: 1.5;
+                font-size: 15px;
+                margin: auto;
+                color:#367591;
+            }
+        }
+        button:hover{
+            opacity:0.9;
+            cursor:pointer;
+        }
+        .source:hover{
+            text-decoration: underline;
+        }
+        name{
+            text-align:center ;
+        }
+        .myself{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Traveling and Tourism
+        <br/>
+        🚦🚘Road Trips And Scenic Drives🚘🚦
+    </h1>
+    <h2>
+        <em>Driving through scenic routes can provide time for reflection and relaxation. The calming effect of beautiful views can enhance creativity,reduce stress, and offer sense of peace</em>
+    </h2>
+    <img 
+    src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/651/original/Scotland-scenic-drives-and-routes.jpg?1727024714
+    alt="Travel and tourism:Road trips ans scenic drives"
+    />
+    <p>
+        Choosing the perfect vacation spot can be stressful in itself. Planning activities, transportation, and lodging is hard work. That’s why it’s important to just go. In the words of author Greg Anderson, “Focus on the journey, not your destination.” Take advantage of your time away by making time for the scenic route.
+    </p>
+    <a 
+    href="https://www.thezebra.com/resources/driving/iconic-road-trips/"
+    target="-blank"
+    class="Source"
+    >
+    Learn more on thezebra.com
+     </a>
+    
+    <button class="visit-button">Visit Here!</button>
+    <p class="myself">This page was built by Thembile Maseko</p>
+    <script>
+        function visit(){
+            let name=prompt("what is your name?");
+            let transport=prompt("which mode of transport do you prefer?");
+            if(transport==="car"||transport==="bus"){
+                alert("Hi👋"+name+"!Enjoy every scenic view while travelling!");
+            }else{
+                alert("Hi👋"+name+"Travel with a car or a bus and enjoy every scenic view while travelling");
+            }
+
+        }
+ 
+        let visitButton=document.querySelector(".visit-button");
+        visitButton.addEventListener("click",visit);
+
+
+
+    </script>
+</body>
+</html>
